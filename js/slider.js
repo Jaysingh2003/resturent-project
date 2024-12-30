@@ -1,8 +1,6 @@
 const slides = document.querySelectorAll(".slide");
 const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
-
-let currentIndex = 0;
+c
 
 function showSlide(index) {
   slides.forEach((slide) => slide.classList.remove("active"));
