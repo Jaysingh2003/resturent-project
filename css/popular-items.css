@@ -25,6 +25,8 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   flex-shrink: 0;
+  cursor: pointer;
+  border: none;
 }
 
 .carousel-nav:hover {
@@ -32,82 +34,39 @@
   color: #fff;
 }
 
+.carousel-nav.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .popular-swiper {
   flex: 1;
   overflow: hidden;
 }
 
-.popular-card {
+.swiper-slide {
+  height: auto;
+}
+
+/* Use the same food-card styles for consistency */
+.popular-swiper .food-card {
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
-.popular-card:hover {
+.popular-swiper .food-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.popular-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.popular-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.popular-info {
-  padding: 15px;
-}
-
-.popular-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.popular-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-}
-
-.popular-price {
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-}
-
-.popular-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.popular-rating {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 12px;
-  color: #666;
-}
-
-.popular-time {
-  font-size: 12px;
-  color: #999;
 }
 
 .quantity-control {
   margin-left: auto;
   display: flex;
   align-items: center;
-  background-color: #2ebf91;
+  background-color: #F3BA00;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -122,6 +81,9 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .qty-btn:hover {
@@ -129,10 +91,12 @@
 }
 
 .qty-value {
-  padding: 0 8px;
+  padding: 0 14px;
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
+  background-color: #fff;
+  color: #000000;
+  
 }
 
 .request-dish-wrapper {
@@ -148,8 +112,33 @@
   font-size: 14px;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .request-dish-btn:hover {
   background-color: #1ac073;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    gap: 15px;
+  }
+  
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    gap: 10px;
+  }
+  
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+  }
 }

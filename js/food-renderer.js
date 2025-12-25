@@ -51,24 +51,24 @@ function createPopularCard(item) {
     
     return `
         <div class="swiper-slide">
-            <article class="popular-card">
-                <div class="popular-image">
+            <article class="food-card">
+                <div class="food-image">
                     <img src="${item.image}" alt="${item.name}">
                     ${discountBadge}
                 </div>
-                <div class="popular-info">
-                    <div class="popular-header">
-                        <h3 class="popular-name">${item.name}</h3>
-                        <span class="popular-price">₹${item.price}</span>
+                <div class="food-info">
+                    <div class="food-header">
+                        <h3 class="food-name">${item.name}</h3>
+                        <span class="food-price">₹${item.price}</span>
                     </div>
-                    <div class="popular-meta">
-                        <div class="popular-rating">
+                    <div class="food-meta">
+                        <div class="food-rating">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="#F3BA00">
                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                             </svg>
                             <span>${item.rating}</span>
                         </div>
-                        <span class="popular-time"> ${item.time}</span>
+                        <span class="food-time"> ${item.time}</span>
                         ${quantityControl}
                     </div>
                 </div>
