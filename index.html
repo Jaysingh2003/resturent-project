@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTGeats - Authentic Home Food in India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Modular CSS imports -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/home-kitchen.css">
+    <link rel="stylesheet" href="css/popular-items.css">
+    <link rel="stylesheet" href="css/video-section.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Swiper CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">JTGeats</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Menu</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Authentic Home<br>food in India</h1>
+                <p class="hero-description">JTGeats is a courier service in which authentic home cook food is delivered
+                    to a customer.</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search food you love" class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/public/cuate.svg" alt="Chef cooking illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Kitchen Section -->
+    <section class="home-kitchen">
+        <div class="container">
+            <h2 class="section-title">Home Kitchen</h2>
+            <div class="food-grid">
+                <!-- Food cards will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="popular-items">
+        <div class="container">
+            <h2 class="section-title">Popular Items</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav carousel-prev" aria-label="Previous">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <div class="swiper popular-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Popular items will be dynamically generated here -->
+                    </div>
+                </div>
+                <button class="carousel-nav carousel-next" aria-label="Next">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div class="request-dish-wrapper">
+                <button class="request-dish-btn" id="openModalBtn">Request a Dish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="video-title">We are providing best<br>home cooked food delivery service.</h2>
+            <p class="video-description">Away from home and craving the tasty homemade recipes?<br>Choose from a
+                selection of our delicious home cooked dishes.</p>
+            <div class="video-wrapper" id="videoWrapper">
+                <video id="promoVideo" poster="/placeholder.svg?height=450&width=800">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="play-btn" id="playBtn" aria-label="Play video">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2 class="contact-title">Do you have a question<br>or want to become a seller?</h2>
+                    <p class="contact-description">Fill this form and our manager will contact you within 48 hours.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                            <input type="email" placeholder="Your e-mail" class="form-input" required>
+                        </div>
+                        <textarea placeholder="Your message" class="form-textarea" required></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Delivery illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="footer-logo">JTGeats</a>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">Menu</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Request Dish Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="closeModalBtn" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2 class="modal-title">Request a Dish</h2>
+            <p class="modal-description">Tell us what dish you'd like and we'll try to find a home chef who can make it!
+            </p>
+            <form class="modal-form" id="requestForm">
+                <div class="modal-form-group">
+                    <label for="dishName">Dish Name</label>
+                    <input type="text" id="dishName" class="modal-input" placeholder="Enter dish name" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="dishDescription">Description</label>
+                    <textarea id="dishDescription" class="modal-textarea" placeholder="Describe the dish you want..."
+                        required></textarea>
+                </div>
+                <div class="modal-form-group">
+                    <label for="preferredPrice">Preferred Price Range</label>
+                    <input type="text" id="preferredPrice" class="modal-input" placeholder="e.g., ₹100-200">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="modal-btn modal-btn-cancel" id="cancelModalBtn">Cancel</button>
+                    <button type="submit" class="modal-btn modal-btn-submit">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Food data and renderer -->
+    <script src="js/food-data.js"></script>
+    <script src="js/food-renderer.js"></script>
+    
+    <!-- Modular JS imports -->
+    <script src="js/modal.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/quantity.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+
+</html>
