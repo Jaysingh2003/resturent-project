@@ -1,6 +1,6 @@
-// =====================
+
 // Video Functionality
-// =====================
+
 const videoWrapper = document.getElementById("videoWrapper")
 const promoVideo = document.getElementById("promoVideo")
 const playBtn = document.getElementById("playBtn")

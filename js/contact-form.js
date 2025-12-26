@@ -1,6 +1,6 @@
-// =====================
+
 // Contact Form
-// =====================
+
 const contactForm = document.getElementById("contactForm")
 
 contactForm.addEventListener("submit", (e) => {

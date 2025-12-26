@@ -1,6 +1,6 @@
-// =====================
+
 // Quantity Controls
-// =====================
+
 document.querySelectorAll(".quantity-control").forEach((control) => {
   const minusBtn = control.querySelector(".minus")
   const plusBtn = control.querySelector(".plus")

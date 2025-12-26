@@ -1,4 +1,4 @@
-// Food data with mixed discount availability
+// Food data 
 const foodData = [
     {
         id: 1,

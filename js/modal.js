@@ -1,6 +1,6 @@
-// =====================
+
 // Modal Functionality
-// =====================
+
 const modalOverlay = document.getElementById("modalOverlay")
 const openModalBtn = document.getElementById("openModalBtn")
 const closeModalBtn = document.getElementById("closeModalBtn")

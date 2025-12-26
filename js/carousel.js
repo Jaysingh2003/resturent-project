@@ -1,6 +1,6 @@
-// =====================
+
 // Swiper Carousel
-// =====================
+
 document.addEventListener('DOMContentLoaded', function() {
     const popularSwiper = new Swiper(".popular-swiper", {
         slidesPerView: 1,
