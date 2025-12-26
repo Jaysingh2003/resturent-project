@@ -3,7 +3,7 @@
    ===================== */
 .popular-items {
   padding: 50px 0;
-  background-color: #f2f2f2;
+  background-color: #F7F8FA;
 }
 
 .carousel-wrapper {
@@ -105,7 +105,7 @@
 }
 
 .request-dish-btn {
-  background-color: #2ebf91;
+  background-color: #1ac073;
   color: #fff;
   padding: 12px 35px;
   border-radius: 25px;
@@ -117,7 +117,7 @@
 }
 
 .request-dish-btn:hover {
-  background-color: #1ac073;
+  background-color: #16b069;
 }
 
 /* Responsive adjustments */

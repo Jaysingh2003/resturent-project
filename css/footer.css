@@ -2,9 +2,11 @@
    FOOTER
    ===================== */
 .footer {
+  
   background-color: #1ac073;
   padding: 20px 0;
 }
+
 
 .footer-container {
   max-width: 1200px;
@@ -49,3 +51,11 @@
 .social-link:hover {
   opacity: 0.8;
 }
+.footer-line {
+   width: 80%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+

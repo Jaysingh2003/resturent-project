@@ -3,7 +3,7 @@
    ===================== */
 .contact-section {
   padding: 60px 0;
-  background-color: #f0faf7;
+  background-color: #F7F8FA;
 }
 
 .contact-wrapper {
@@ -71,17 +71,17 @@
 
 .submit-btn {
   align-self: flex-start;
-  background-color: #2ebf91;
+  background-color: #1AC073;
   color: #fff;
-  padding: 12px 35px;
-  border-radius: 25px;
+  padding: 12px 45px;
+  border-radius: 10px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
   transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #1ac073;
+  background-color: #14a461;
 }
 
 .contact-image {

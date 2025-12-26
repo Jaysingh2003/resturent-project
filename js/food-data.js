@@ -42,7 +42,7 @@ const foodData = [
         price: 250,
         rating: 4.9,
         time: "30-45 min",
-        image: "/public/biryani.png",
+        image: "/public/pizza5.png",
         discount: 15
     },
     {
@@ -51,7 +51,7 @@ const foodData = [
         price: 220,
         rating: 4.6,
         time: "25-35 min",
-        image: "/public/butter-chicken.png",
+        image: "/public/pizza6.png",
         discount: null
     },
     {
@@ -60,7 +60,7 @@ const foodData = [
         price: 180,
         rating: 4.4,
         time: "20-30 min",
-        image: "/public/dal-makhani.png",
+        image: "/public/pizza7.png",
         discount: 10
     },
     {
@@ -69,7 +69,7 @@ const foodData = [
         price: 280,
         rating: 4.8,
         time: "40-55 min",
-        image: "/public/tandoori.png",
+        image: "/public/pizza8.png",
         discount: null
     },
     {
@@ -78,7 +78,7 @@ const foodData = [
         price: 120,
         rating: 4.5,
         time: "15-25 min",
-        image: "/public/dosa.png",
+        image: "/public/pizza9.png",
         discount: 25
     },
     {
@@ -87,7 +87,7 @@ const foodData = [
         price: 150,
         rating: 4.3,
         time: "20-30 min",
-        image: "/public/chole.png",
+        image: "/public/pizza1.png",
         discount: null
     },
     {
@@ -96,7 +96,7 @@ const foodData = [
         price: 160,
         rating: 4.2,
         time: "25-35 min",
-        image: "/public/rajma.png",
+        image: "/public/pizza2.png",
         discount: 12
     },
     {
@@ -105,7 +105,7 @@ const foodData = [
         price: 200,
         rating: 4.6,
         time: "30-40 min",
-        image: "/public/palak-paneer.png",
+        image: "/public/pizza3.png",
         discount: null
     }
 ];
@@ -128,7 +128,7 @@ const popularData = [
         price: 184,
         rating: 4.5,
         time: "15-25 min",
-        image: "/public/tandoori.png",
+        image: "/public/pizza5.png",
         discount: null
     },
     {
@@ -137,7 +137,7 @@ const popularData = [
         price: 116,
         rating: 4.7,
         time: "10-40 min",
-        image: "/public/chilli-chicken.png",
+        image: "/public/pizza6.png",
         discount: 20
     },
     {
@@ -146,7 +146,7 @@ const popularData = [
         price: 220,
         rating: 4.8,
         time: "20-30 min",
-        image: "/public/butter-chicken.png",
+        image: "/public/pizza7.png",
         discount: null
     },
     {
@@ -155,7 +155,7 @@ const popularData = [
         price: 250,
         rating: 4.9,
         time: "30-45 min",
-        image: "/public/biryani.png",
+        image: "/public/pizza8.png",
         discount: null
     }
 ];
