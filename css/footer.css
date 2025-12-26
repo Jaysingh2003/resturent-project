@@ -2,35 +2,33 @@
    FOOTER
    ===================== */
 .footer {
-  
-  background-color: #1ac073;
-  padding: 20px 0;
+  background-color: var(--primary-color);
+  padding: var(--spacing-lg) 0;
 }
-
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 var(--spacing-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .footer-logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
 }
 
 .footer-nav-list {
   display: flex;
-  gap: 25px;
+  gap: var(--spacing-xl);
 }
 
 .footer-link {
-  font-size: 14px;
-  color: #fff;
+  font-size: var(--font-size-sm);
+  color: var(--white);
   transition: opacity 0.3s ease;
 }
 
@@ -40,22 +38,22 @@
 
 .footer-social {
   display: flex;
-  gap: 15px;
+  gap: var(--spacing-md);
 }
 
 .social-link {
-  color: #fff;
+  color: var(--white);
   transition: opacity 0.3s ease;
 }
 
 .social-link:hover {
   opacity: 0.8;
 }
+
 .footer-line {
-   width: 80%;
+  width: 80%;
   height: 1px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  margin-top: 20px;
+  background-color: var(--white);
+  margin: var(--spacing-lg) auto 0;
 }
 
