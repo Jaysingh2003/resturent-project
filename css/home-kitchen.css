@@ -2,33 +2,32 @@
    HOME KITCHEN SECTION
    ===================== */
 .home-kitchen {
-  padding: 50px 0;
-  background-color: #F7F8FA;
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--background-light);
 }
 
 .food-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: var(--spacing-xl);
 }
 
 .food-card {
-  background-color: #fff;
-  border-radius: 12px;
+  background-color: var(--background-card);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .food-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px var(--shadow-light);
 }
 
 .food-image {
   position: relative;
   height: 180px;
   overflow: hidden;
-
 }
 
 .food-image img {
@@ -41,17 +40,17 @@
   position: absolute;
   top: 1px;
   left: 1px;
-  background-color: #F3BA00;
-  color: #000;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 5px;
-  border-radius: 4px;
-  border: 1px solid rgb(190, 189, 190);
+  background-color: var(--secondary-color);
+  color: var(--text-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--spacing-xs) 5px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
 }
 
 .food-info {
-  padding: 15px;
+  padding: var(--spacing-md);
 }
 
 .food-header {
@@ -62,59 +61,58 @@
 }
 
 .food-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
 }
 
 .food-price {
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
 }
 
 .food-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-sm);
 }
 
 .food-rating {
   display: flex;
   align-items: center;
-  gap: 4px;
-  font-size: 12px;
-  color: #000000;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  color: var(--text-primary);
   background-color: #efefef;
-  padding: 4px 7px;
-  border-radius: 6px;
-  border:solid 1px #e1dfdf;
-  
+  padding: var(--spacing-xs) 7px;
+  border-radius: var(--radius-md);
+  border: solid 1px var(--border-light);
 }
 
 .food-time {
-  font-size: 12px;
-  color: #000;
-  padding:5px 10px;
+  font-size: var(--font-size-xs);
+  color: var(--text-primary);
+  padding: 5px 10px;
   background-color: #f0f0f0;
-  border-radius: 8px;
-  border-left: solid 4px #BEBEBE;
-  border-right: solid 4px #BEBEBE;
+  border-radius: var(--spacing-sm);
+  border-left: solid 4px var(--border-medium);
+  border-right: solid 4px var(--border-medium);
 }
 
 .add-btn {
   margin-left: auto;
   width: 20px;
   height: 20px;
-  background-color: #F3BA00;
+  background-color: var(--secondary-color);
   border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white);
   transition: background-color 0.3s ease;
 }
 
 .add-btn:hover {
-  background-color: #d0a002;
+  background-color: var(--secondary-hover);
 }
